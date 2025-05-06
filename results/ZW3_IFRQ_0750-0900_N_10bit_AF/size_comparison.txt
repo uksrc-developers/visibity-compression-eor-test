@@ -1,0 +1,7 @@
+Metric                    |     Original |   Compressed |     Ratio
+-------------------------------------------------------------------
+Total MS size             |      97.8 GB |      34.7 GB |     2.82x
+DATA size                 |      66.2 GB |      20.7 GB |     3.20x
+WEIGHT_SPECTRUM size      |      33.1 GB |      12.4 GB |     2.67x
+STD (first 10)            |     2.655405 |     2.655416 |  0.00042%
+Noise STD (Δt)            |     1.768727 |     1.768737 |  0.00058%

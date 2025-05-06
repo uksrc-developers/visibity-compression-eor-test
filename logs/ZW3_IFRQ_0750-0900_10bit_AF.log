@@ -1,0 +1,80 @@
+# Compression log
+Start time: 2025-05-02T16:36:38.968691
+Command: /usr/bin/time -v DP3 steps=[] msin=/net/node113/data/users/lofareor/mertens/srcnet/uv_compression_test/ZW3_IFRQ_0750-0900.ms msout=/net/node113/data/users/lofareor/mertens/srcnet/uv_compression_test/ZW3_IFRQ_0750-0900_10bit_AF.ms msout.overwrite=true msout.storagemanager='dysco' msout.storagemanager.databitrate=10 msout.storagemanager.normalization=AF
+
+ copying info and subtables ...
+Finished preparing output MS
+MSReader
+  input MS:       /net/node113/data/users/lofareor/mertens/srcnet/uv_compression_test/ZW3_IFRQ_0750-0900.ms
+  band            0
+  startchan:      0  (0)
+  nchan:          151  (0)
+  ncorrelations:  1
+  nbaselines:     38988
+  first time:     2021/09/21/14:12:40
+  last time:      2021/09/21/18:12:30
+  ntimes:         1440
+  time interval:  10
+  DATA column:    DATA
+  WEIGHT column:  WEIGHT_SPECTRUM
+  FLAG column:    FLAG
+  autoweight:     false
+MSWriter msout.
+  output MS:      /net/node113/data/users/lofareor/mertens/srcnet/uv_compression_test/ZW3_IFRQ_0750-0900_10bit_AF.ms
+  nchan:          151
+  ncorrelations:  1
+  nbaselines:     38988
+  ntimes:         1440
+  time interval:  10
+  DATA column:    DATA
+  FLAG column:    FLAG
+  WEIGHT column:  WEIGHT_SPECTRUM
+  Compressed:     yes
+  Data bitrate:   10
+  Weight bitrate: 12
+  Dysco mode:     AF TruncatedGaussian(2.5)
+  use thread:     true
+Processing 1440 time slots ...
+
+0%....10....20....30....40....50....60....70....80....90....100%
+Finishing processing ...
+
+NaN/infinite data flagged in reader
+===================================
+
+Percentage of flagged visibilities detected per correlation:
+  [0] out of 8477550720 visibilities   [0%]
+0 missing time slots were inserted
+
+Total DP3 time    11007.8 real     87954.6 user      189.19 system
+    2.2% (  241  s) MSReader
+   97.8% (10766  s) MSWriter msout.
+     99.6% (10720  s) Creating task
+    102.2% (10998  s) Writing (threaded)
+	Command being timed: "DP3 steps=[] msin=/net/node113/data/users/lofareor/mertens/srcnet/uv_compression_test/ZW3_IFRQ_0750-0900.ms msout=/net/node113/data/users/lofareor/mertens/srcnet/uv_compression_test/ZW3_IFRQ_0750-0900_10bit_AF.ms msout.overwrite=true msout.storagemanager=dysco msout.storagemanager.databitrate=10 msout.storagemanager.normalization=AF"
+	User time (seconds): 88346.75
+	System time (seconds): 189.99
+	Percent of CPU this job got: 798%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:04:41
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 3071040
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1328
+	Minor (reclaiming a frame) page faults: 75112534
+	Voluntary context switches: 271228
+	Involuntary context switches: 73694
+	Swaps: 0
+	File system inputs: 190834792
+	File system outputs: 72930712
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+End time: 2025-05-02T19:41:20.356293
+Duration: 3:04:41.387602
+Exit code: 0
