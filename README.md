@@ -52,16 +52,16 @@ The full pipeline consists of the following steps, each executed via dedicated s
 3. **Compute power spectra**  
    - Script: [`make_ps.py`](./make_ps.py)  
    - Uses `ps_eor` to derive 2D power spectra for comparison.
+   - Calculates:
+     - Compression noise in cylindrically averaged power spectra
+     - Correlation of compression noise between independent subsets
+     - Impact on 21-cm signal detectability
 
 4. **Evaluate compression performance**  
    - Script: [`compare_ms_sizes.py`](./compare_ms_sizes.py)  
    - Calculates:
      - Compression ratio (total size, `DATA`, and `WEIGHT_SPECTRUM`)
      - Visibility statistics (standard deviation, time-difference std)
-     - Compression noise in cylindrically averaged power spectra
-     - Correlation of compression noise between independent subsets
-     - Impact on 21-cm signal detectability
-
 ---
 
 ## Results
